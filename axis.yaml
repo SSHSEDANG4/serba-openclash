@@ -1,0 +1,56 @@
+proxies:
+  - name: AXIS SOCMED
+    server: 104.21.71.112
+    port: 443
+    type: trojan
+    password: 44002e18-ca25-419e-b2da-bfdc5f0f7dda
+    skip-cert-verify: true
+    sni: blog.clova.line.me
+    network: ws
+    ws-opts:
+      path: wss://blog.clova.line.me/trojan-ws
+      headers:
+        Host: sg4.sedang.my.id
+    udp: true
+
+  - name: AXIS MUSIC
+    server: 162.159.130.11
+    port: 443
+    type: trojan
+    password: 44002e18-ca25-419e-b2da-bfdc5f0f7dda
+    skip-cert-verify: true
+    sni: investors.spotify.com
+    network: ws
+    ws-opts:
+      path: wss://investors.spotify.com/trojan-ws
+      headers:
+        Host: sg4.sedang.my.id
+    udp: true
+
+  - name: AXIS VIDEO
+    server: 104.18.118.155
+    port: 443
+    type: trojan
+    password: 44002e18-ca25-419e-b2da-bfdc5f0f7dda
+    skip-cert-verify: true
+    sni: creativeservices.netflix.com
+    network: ws
+    ws-opts:
+      path: wss://creativeservices.netflix.com/trojan-ws
+      headers:
+        Host: sg4.sedang.my.id
+    udp: true
+    
+  - name: AXIS GAME
+    server: 104.18.21.94
+    port: 443
+    type: trojan
+    password: 44002e18-ca25-419e-b2da-bfdc5f0f7dda
+    skip-cert-verify: true
+    sni: cdn.appsflyer.com
+    network: ws
+    ws-opts:
+      path: wss://cdn.appsflyer.com/trojan-ws
+      headers:
+        Host: sg4.sedang.my.id
+    udp: true
